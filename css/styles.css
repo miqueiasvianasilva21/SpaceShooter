@@ -1,0 +1,348 @@
+body{
+  background-image: url("../assets/Background/ceu-estrelado.png");
+  animation: movimento-fundo 100s linear infinite;
+}
+
+#space {
+  background-image: url("../assets/Background/espaco-azul.png");
+  position: relative;
+  overflow: hidden;
+  animation: movimento-fundo 100s linear infinite;
+}
+.start-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  display: block;
+  z-index: 1;
+}
+
+.rocket{
+  position: absolute;
+  left: 0px;
+  height: 30px;
+  width: 30px;
+  top:0px;
+}
+
+
+@keyframes movimento-fundo {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 8000px; /* Ajuste a altura desejada para o movimento do fundo */
+  }
+}
+
+
+.menu-botoes{
+  /* background-image: url("ceu3.avif"); */
+  background-color: rgb(21, 54, 136);
+  height: 100px;
+}
+.botao-jogar a{
+  position: absolute;
+  text-decoration: none;
+  left:735px;
+  top:550px;
+  background-color: #007bff; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto do botão */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho da fonte */
+  border: none; /* Remova a borda do botão */
+  border-radius: 5px; /* Adicione um leve arredondamento às bordas */
+  cursor: pointer; /* Transforme o cursor em uma mãozinha ao passar o mouse */
+}
+
+/* Estilize o botão quando o mouse passar por cima */
+.botao-jogar:hover {
+  background-color: #0056b3; /* Cor de fundo alterada ao passar o mouse */
+}
+
+#tela-inicio{
+  border-color: blue;
+  border-width: 2px;
+  border-radius: 5px;
+  width: 250px;
+  height:400px;
+  position: absolute;
+  left: 650px;
+  top:380px;
+}
+
+#menu-ativo{
+  font-size: 25px;
+  color: aquamarine;
+}
+#p-ajuda{
+  position:absolute;
+  left: 600px;
+  font-size: 30px;
+  color:aliceblue;
+  top:200px;
+}
+strong {
+  font-weight: bold; 
+}
+#astronauta{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 900px;
+  top:center;
+}
+#alienigena{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  left: 350px;
+  top:center;
+}
+
+#astronauta, #alienigena, #p-ajuda {
+  transition: all 0.3s ease; 
+}
+.topo-inicio {
+  background-image: url("../assets/Background/espaco-azul.png");
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  animation: moverEstrelas 10s linear infinite;
+  background-repeat: no-repeat;
+  background-size: 200% 100%; /* Ajuste o valor de acordo com a largura do espaço que deseja mover */
+}
+
+@keyframes moverEstrelas {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.topo-ajuda {
+  background-image: url("../assets/Background/espaco-azul.png");
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  animation: moverEstrelas 10s linear infinite;
+  background-repeat: no-repeat;
+  background-size: 200% 100%; /* Ajuste o valor de acordo com a largura do espaço que deseja mover */
+}
+
+@keyframes moverEstrelas {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+
+
+.imagem-iniciar{
+  background-image: url("../assets/Background/espaco-azul.png");
+  width: 300px;
+  height:200px;
+  position: absolute;
+  left: 300px;
+  top:450px;
+
+}
+.imagem-tiro{
+  background-image: url("../assets/Background/espaco-azul.png");
+  width: 300px;
+  height:200px;
+  position: absolute;
+  left: 650px;
+  top:450px;
+
+}
+.imagem-movimento{
+  background-image: url("../assets/Background/espaco-azul.png");
+  width: 300px;
+  height:200px;
+  position: absolute;
+  left: 1000px;
+  top:450px;
+
+}
+#p-iniciar{
+  position:absolute;
+  left: 300px;
+  color:aliceblue;
+  top:420px;
+}
+#p-tiro{
+  position:absolute;
+  left: 650px;
+  color:aliceblue;
+  top:420px;
+}
+#p-movimento{
+  position:absolute;
+  left: 1000px;
+  color:aliceblue;
+  top:420px;
+}
+#ajuda-tiro{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+#ajuda-laser{
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
+#ajuda-iniciar{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+#ajuda-movimento{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+#titulo-sobre{
+  position: absolute;
+  color:aliceblue;
+  left:600px;
+  top: 150px;
+}
+#paragrafo-sobre{
+  position: absolute;
+  color:aliceblue;
+  left:600px;
+  top: 200px;
+}
+
+.menu-botoes ul{
+  margin-left: 100px;
+  position: absolute;
+  left:100px;
+  top:40px;
+} 
+/* Estilos para os elementos <li> que contêm links <a> */
+.menu-botoes li {
+  display: inline;
+  text-align: center;
+  margin-top: 5px;
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+/* Estilos para os links <a> dentro dos elementos <li> */
+.menu-botoes li a {
+  text-decoration: none; /* Remova o sublinhado padrão dos links */
+  color: inherit; /* Herde a cor definida para o elemento <li> */
+   /* Transforme o link em um bloco para ocupar todo o espaço do <li> */
+  padding: 10px; /* Adicione preenchimento para melhorar a acessibilidade ao clicar */
+  background-color: #2057ab; /* Cor de fundo para o link */
+  border-radius: 5px; /* Borda arredondada */
+  transition: background-color 0.3s ease; /* Efeito de transição suave na mudança de cor de fundo */
+
+  /* Adicione outros estilos desejados aqui, como:hover para efeitos de hover */
+}
+
+/* Estilo para links ativos */
+.menu-botoes li.menu-ativo a {
+  background-color: #ff0000; /* Cor de fundo para o link ativo */
+  color: white; /* Cor do texto do link ativo */
+}
+
+.imagem-game{
+  background-image: url("https://opengameart.org/sites/default/files/styles/medium/public/sample.png");
+  position: absolute;
+  left:600px;
+  top:300px;
+  width: 500px;
+  height:400px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  
+}
+#ship {
+  position: absolute;
+}
+
+/* #vidas{
+  position: absolute;
+  left: 340px;
+  top:20px;
+} */
+
+#vida1{
+  position:absolute;
+  left: 20px;
+  top:20px;
+}
+#vida2{
+  position:absolute;
+  left: 70px;
+  top:20px;
+}
+#vida3{
+  position:absolute;
+  left:120px;
+  top:20px;
+}
+
+.pontuacao{
+  position: absolute;
+  
+ color:white;
+ font-size: large;
+ left: 500px;
+  top:20px;
+}
+
+
+
+.enemy-ship {
+  position: absolute;
+}
+.asteroideG {
+  position: absolute;
+}
+.asteroideP {
+  position: absolute;
+}
+.game-over{
+  position: absolute;
+  top:350px;
+  left:200px;
+  color:white;
+  font-size: 40px;
+}
+.reiniciar{
+  position: absolute;
+  top:400px;
+  left:250px;
+  color :white;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.disco-voador{
+  position:absolute;
+}
+
+.tiro{
+  position: absolute;
+}
